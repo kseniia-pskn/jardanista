@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE7241D12AAE6F09000097BC /* JardanistaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7241D02AAE6F09000097BC /* JardanistaApp.swift */; };
+		AE7241D32AAE6F09000097BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7241D22AAE6F09000097BC /* ContentView.swift */; };
+		AE7241D52AAE6F0C000097BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE7241D42AAE6F0C000097BC /* Assets.xcassets */; };
+		AE7241D82AAE6F0C000097BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE7241D72AAE6F0C000097BC /* Preview Assets.xcassets */; };
+		AE7241FB2AAE6F87000097BC /* RequestProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7241FA2AAE6F87000097BC /* RequestProcessor.swift */; };
+		AE7241FD2AAE6FB3000097BC /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7241FC2AAE6FB3000097BC /* CameraView.swift */; };
+		AE7241FF2AAE6FCD000097BC /* PhotoLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7241FE2AAE6FCD000097BC /* PhotoLibraryView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE7241DE2AAE6F0D000097BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE7241C52AAE6F09000097BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE7241CC2AAE6F09000097BC;
+			remoteInfo = Jardanista;
+		};
+		AE7241E82AAE6F0D000097BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE7241C52AAE6F09000097BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE7241CC2AAE6F09000097BC;
+			remoteInfo = Jardanista;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE7241CD2AAE6F09000097BC /* Jardanista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jardanista.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE7241D02AAE6F09000097BC /* JardanistaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JardanistaApp.swift; sourceTree = "<group>"; };
+		AE7241D22AAE6F09000097BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AE7241D42AAE6F0C000097BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE7241D72AAE6F0C000097BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AE7241DD2AAE6F0D000097BC /* JardanistaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JardanistaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE7241E72AAE6F0D000097BC /* JardanistaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JardanistaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE7241FA2AAE6F87000097BC /* RequestProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProcessor.swift; sourceTree = "<group>"; };
+		AE7241FC2AAE6FB3000097BC /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		AE7241FE2AAE6FCD000097BC /* PhotoLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE7241CA2AAE6F09000097BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE7241DA2AAE6F0D000097BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE7241E42AAE6F0D000097BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE7241C42AAE6F09000097BC = {
+			isa = PBXGroup;
+			children = (
+				AE7241CF2AAE6F09000097BC /* Jardanista */,
+				AE7241CE2AAE6F09000097BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE7241CE2AAE6F09000097BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE7241CD2AAE6F09000097BC /* Jardanista.app */,
+				AE7241DD2AAE6F0D000097BC /* JardanistaTests.xctest */,
+				AE7241E72AAE6F0D000097BC /* JardanistaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE7241CF2AAE6F09000097BC /* Jardanista */ = {
+			isa = PBXGroup;
+			children = (
+				AE7241D02AAE6F09000097BC /* JardanistaApp.swift */,
+				AE7241D22AAE6F09000097BC /* ContentView.swift */,
+				AE7241FA2AAE6F87000097BC /* RequestProcessor.swift */,
+				AE7241FC2AAE6FB3000097BC /* CameraView.swift */,
+				AE7241FE2AAE6FCD000097BC /* PhotoLibraryView.swift */,
+				AE7241D42AAE6F0C000097BC /* Assets.xcassets */,
+				AE7241D62AAE6F0C000097BC /* Preview Content */,
+			);
+			path = Jardanista;
+			sourceTree = "<group>";
+		};
+		AE7241D62AAE6F0C000097BC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AE7241D72AAE6F0C000097BC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE7241CC2AAE6F09000097BC /* Jardanista */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE7241F12AAE6F0D000097BC /* Build configuration list for PBXNativeTarget "Jardanista" */;
+			buildPhases = (
+				AE7241C92AAE6F09000097BC /* Sources */,
+				AE7241CA2AAE6F09000097BC /* Frameworks */,
+				AE7241CB2AAE6F09000097BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jardanista;
+			productName = Jardanista;
+			productReference = AE7241CD2AAE6F09000097BC /* Jardanista.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE7241DC2AAE6F0D000097BC /* JardanistaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE7241F42AAE6F0D000097BC /* Build configuration list for PBXNativeTarget "JardanistaTests" */;
+			buildPhases = (
+				AE7241D92AAE6F0D000097BC /* Sources */,
+				AE7241DA2AAE6F0D000097BC /* Frameworks */,
+				AE7241DB2AAE6F0D000097BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE7241DF2AAE6F0D000097BC /* PBXTargetDependency */,
+			);
+			name = JardanistaTests;
+			productName = JardanistaTests;
+			productReference = AE7241DD2AAE6F0D000097BC /* JardanistaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE7241E62AAE6F0D000097BC /* JardanistaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE7241F72AAE6F0D000097BC /* Build configuration list for PBXNativeTarget "JardanistaUITests" */;
+			buildPhases = (
+				AE7241E32AAE6F0D000097BC /* Sources */,
+				AE7241E42AAE6F0D000097BC /* Frameworks */,
+				AE7241E52AAE6F0D000097BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE7241E92AAE6F0D000097BC /* PBXTargetDependency */,
+			);
+			name = JardanistaUITests;
+			productName = JardanistaUITests;
+			productReference = AE7241E72AAE6F0D000097BC /* JardanistaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE7241C52AAE6F09000097BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AE7241CC2AAE6F09000097BC = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					AE7241DC2AAE6F0D000097BC = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = AE7241CC2AAE6F09000097BC;
+					};
+					AE7241E62AAE6F0D000097BC = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = AE7241CC2AAE6F09000097BC;
+					};
+				};
+			};
+			buildConfigurationList = AE7241C82AAE6F09000097BC /* Build configuration list for PBXProject "Jardanista" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE7241C42AAE6F09000097BC;
+			productRefGroup = AE7241CE2AAE6F09000097BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE7241CC2AAE6F09000097BC /* Jardanista */,
+				AE7241DC2AAE6F0D000097BC /* JardanistaTests */,
+				AE7241E62AAE6F0D000097BC /* JardanistaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE7241CB2AAE6F09000097BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE7241D82AAE6F0C000097BC /* Preview Assets.xcassets in Resources */,
+				AE7241D52AAE6F0C000097BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE7241DB2AAE6F0D000097BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE7241E52AAE6F0D000097BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE7241C92AAE6F09000097BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE7241FF2AAE6FCD000097BC /* PhotoLibraryView.swift in Sources */,
+				AE7241D32AAE6F09000097BC /* ContentView.swift in Sources */,
+				AE7241D12AAE6F09000097BC /* JardanistaApp.swift in Sources */,
+				AE7241FB2AAE6F87000097BC /* RequestProcessor.swift in Sources */,
+				AE7241FD2AAE6FB3000097BC /* CameraView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE7241D92AAE6F0D000097BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE7241E32AAE6F0D000097BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE7241DF2AAE6F0D000097BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE7241CC2AAE6F09000097BC /* Jardanista */;
+			targetProxy = AE7241DE2AAE6F0D000097BC /* PBXContainerItemProxy */;
+		};
+		AE7241E92AAE6F0D000097BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE7241CC2AAE6F09000097BC /* Jardanista */;
+			targetProxy = AE7241E82AAE6F0D000097BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AE7241EF2AAE6F0D000097BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE7241F02AAE6F0D000097BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE7241F22AAE6F0D000097BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jardanista/Preview Content\"";
+				DEVELOPMENT_TEAM = UN5Y2T56ZV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(MARKETING_VERSION)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Jardanista";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE7241F32AAE6F0D000097BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jardanista/Preview Content\"";
+				DEVELOPMENT_TEAM = UN5Y2T56ZV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(MARKETING_VERSION)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.Jardanista";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE7241F52AAE6F0D000097BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UN5Y2T56ZV;
+				GENERATE_INFOPLIST_FILE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.JardanistaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jardanista.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jardanista";
+			};
+			name = Debug;
+		};
+		AE7241F62AAE6F0D000097BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UN5Y2T56ZV;
+				GENERATE_INFOPLIST_FILE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.JardanistaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jardanista.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jardanista";
+			};
+			name = Release;
+		};
+		AE7241F82AAE6F0D000097BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UN5Y2T56ZV;
+				GENERATE_INFOPLIST_FILE = NO;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.JardanistaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jardanista;
+			};
+			name = Debug;
+		};
+		AE7241F92AAE6F0D000097BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UN5Y2T56ZV;
+				GENERATE_INFOPLIST_FILE = NO;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.JardanistaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jardanista;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE7241C82AAE6F09000097BC /* Build configuration list for PBXProject "Jardanista" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE7241EF2AAE6F0D000097BC /* Debug */,
+				AE7241F02AAE6F0D000097BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7241F12AAE6F0D000097BC /* Build configuration list for PBXNativeTarget "Jardanista" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE7241F22AAE6F0D000097BC /* Debug */,
+				AE7241F32AAE6F0D000097BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7241F42AAE6F0D000097BC /* Build configuration list for PBXNativeTarget "JardanistaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE7241F52AAE6F0D000097BC /* Debug */,
+				AE7241F62AAE6F0D000097BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7241F72AAE6F0D000097BC /* Build configuration list for PBXNativeTarget "JardanistaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE7241F82AAE6F0D000097BC /* Debug */,
+				AE7241F92AAE6F0D000097BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE7241C52AAE6F09000097BC /* Project object */;
+}
