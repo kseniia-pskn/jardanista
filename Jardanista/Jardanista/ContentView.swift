@@ -74,7 +74,7 @@ struct ContentView: View {
                     .font(.custom("Avenir Next", size: 18))
                     .foregroundColor(primaryTextColor)
                     .padding(.top, 5)
-                
+                    .minimumScaleFactor(0.5)
                 Spacer()
                 
                 HStack(spacing: 15) {

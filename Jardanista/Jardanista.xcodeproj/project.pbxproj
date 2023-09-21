@@ -127,6 +127,8 @@
 			dependencies = (
 			);
 			name = Jardanista;
+			packageProductDependencies = (
+			);
 			productName = Jardanista;
 			productReference = AE7241CD2AAE6F09000097BC /* Jardanista.app */;
 			productType = "com.apple.product-type.application";
@@ -199,6 +201,9 @@
 				Base,
 			);
 			mainGroup = AE7241C42AAE6F09000097BC;
+			packageReferences = (
+				AE2519592ABCEB6A0064F2D6 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = AE7241CE2AAE6F09000097BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -583,6 +588,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AE2519592ABCEB6A0064F2D6 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = AE7241C52AAE6F09000097BC /* Project object */;
 }
