@@ -35,8 +35,7 @@ class RequestProcessor: NSObject, UINavigationControllerDelegate, UIImagePickerC
         _plantDescription = plantDescription
         NSLog("Coordinator instantiated")
     }
-    
-    // Add an instance variable to store the selected image.
+
     private var unwrappedImage: UIImage?
     
     func imagePickerController(_ picker: UIImagePickerController,
@@ -158,8 +157,6 @@ class RequestProcessor: NSObject, UINavigationControllerDelegate, UIImagePickerC
         request.httpMethod = "POST"
         request.addValue(apiKey, forHTTPHeaderField: "Api-Key")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        // Print request body and headers for debugging
         if let body = String(data: request.httpBody ?? Data(), encoding: .utf8) {
             print("Request Body: \(body)")
         }
@@ -191,7 +188,6 @@ class RequestProcessor: NSObject, UINavigationControllerDelegate, UIImagePickerC
                 }
                 
                 if let input = jsonData["input"] as? [String: Any] {
-                    // Access fields inside the "input" dictionary
                     if let latitude = input["latitude"] as? Double {
                         print("Latitude: \(latitude)")
                     } else {
@@ -203,13 +199,9 @@ class RequestProcessor: NSObject, UINavigationControllerDelegate, UIImagePickerC
                     } else {
                         print("Longitude not found or is not a double")
                     }
-                    
-                    // Continue accessing other fields inside the "input" dictionary
                 } else {
                     print("Input data not found or is not a dictionary")
                 }
-                
-                // Continue accessing and typecasting other fields in a similar manner
             } else {
                 print("Failed to parse JSON data or JSON data is not a dictionary")
             }
@@ -258,7 +250,7 @@ class RequestProcessor: NSObject, UINavigationControllerDelegate, UIImagePickerC
 
 class PlantInfoFetcher {
     func fetchPlantInfo(for plantName: String, completion: @escaping (Result<(commonName: String, description: String), Error>) -> Void) {
-        // Construct the Wikipedia search URL based on the plant name.
+        // Wikipedia search URL
         guard let escapedPlantName = plantName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
             completion(.failure(NetworkError.invalidURL))
             return
@@ -270,8 +262,6 @@ class PlantInfoFetcher {
             completion(.failure(NetworkError.invalidURL))
             return
         }
-        
-        // Create a URLSession data task to fetch the plant description.
         let task = URLSession.shared.dataTask(with: wikipediaSearchURL) { data, response, error in
             if let error = error {
                 completion(.failure(error))
@@ -284,7 +274,6 @@ class PlantInfoFetcher {
             }
             
             do {
-                // Parse the JSON response to extract the plant description.
                 let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
                 if let query = json?["query"] as? [String: Any],
                    let pages = query["pages"] as? [String: Any],
