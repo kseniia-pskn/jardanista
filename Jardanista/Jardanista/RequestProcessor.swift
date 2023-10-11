@@ -120,7 +120,8 @@ class RequestProcessor: NSObject, UINavigationControllerDelegate, UIImagePickerC
         }
         NSLog("In postData generated imageData: \(type(of: imageData)) \(imageData)")
         
-        let apiKey = "OypFfeEr9fHbKahifaf6zoswmfk6lNSw6nf8rSoGuPnX4exZ8T"
+        let apiKey = "PASTE_YOUR_API_KEY_HERE"
+        //go to PlantD and create an API key and paste it above 
         let urlString = "https://plant.id/api/v3/identification"
         
         let parameters: [String: Any] = [
